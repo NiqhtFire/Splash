@@ -18,7 +18,7 @@ public class spawnercorner : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        InvokeRepeating("speed", 2f, 6f);
+      
         nextFire = Time.time;
         fireRate = Random.Range(10, 20);
         
