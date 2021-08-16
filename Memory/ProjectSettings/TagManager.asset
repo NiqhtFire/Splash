@@ -11,6 +11,7 @@ TagManager:
   - button
   - Bullet
   - FastBullet
+  - BombBullet
   layers:
   - Default
   - TransparentFX
