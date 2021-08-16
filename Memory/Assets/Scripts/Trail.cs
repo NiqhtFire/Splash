@@ -7,9 +7,10 @@ public class Trail : MonoBehaviour
 {Vector3 lastMousePosition;
     public GameObject obje;
     public int scene;
-   
+    public Character baban;
     public ParticleSystem slice;
     public ParticleSystem sliceblue;
+    public ParticleSystem bombslice;
     void Start()
     {
         Cursor.visible = false;
@@ -65,11 +66,28 @@ public class Trail : MonoBehaviour
         {
 
             CreateBlueSlice();
-            Debug.Log("asdasdsdda");
+            Debug.Log("fast");
 
         }
-    }
+        if (col.gameObject.tag == ("BombBullet"))
+        {
+            Debug.Log("Bomb!");
+            CreateBombEffect();
+            StartCoroutine(randomlababa());
 
+        }
+
+    }
+    IEnumerator randomlababa()
+    {
+        yield return new WaitForSeconds(0.5f);
+        baban.PM.SetActive(true);
+        baban.anan = true;
+        Time.timeScale = 0f;
+
+
+
+    }
     void CreateSlice()
     {
         slice.Play();
@@ -77,5 +95,10 @@ public class Trail : MonoBehaviour
     void CreateBlueSlice()
     {
         sliceblue.Play();
+    }
+
+    void CreateBombEffect()
+    {
+        bombslice.Play();
     }
 }

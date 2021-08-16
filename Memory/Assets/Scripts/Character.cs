@@ -27,7 +27,7 @@ public Sprite sprite3;
 
     void OnTriggerEnter2D(Collider2D col)
 {
-    if (col.gameObject.tag == ("Bullet"))
+        if (col.gameObject.tag == ("Bullet") || col.gameObject.tag == ("FastBullet"))
     {
         Debug.Log("Hit!");
         PM.SetActive(true);
