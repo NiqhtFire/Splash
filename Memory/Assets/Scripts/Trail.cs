@@ -7,13 +7,14 @@ public class Trail : MonoBehaviour
 {Vector3 lastMousePosition;
     public GameObject obje;
     public int scene;
-    private Animator anim;
+   
     public ParticleSystem slice;
+    public ParticleSystem sliceblue;
     void Start()
     {
         Cursor.visible = false;
         Time.timeScale = 1.0f;
-        anim = GetComponent<Animator>();
+        
     }
     
     // Update is called once per frame
@@ -49,7 +50,7 @@ public class Trail : MonoBehaviour
             gameObject.GetComponent<TrailRenderer>().enabled = false;
         }
 
-        
+
     }
     void OnTriggerEnter2D(Collider2D col)
     {
@@ -60,9 +61,21 @@ public class Trail : MonoBehaviour
 
 
         }
+        if (col.gameObject.tag == ("FastBullet"))
+        {
+
+            CreateBlueSlice();
+            Debug.Log("asdasdsdda");
+
+        }
     }
+
     void CreateSlice()
     {
         slice.Play();
+    }
+    void CreateBlueSlice()
+    {
+        sliceblue.Play();
     }
 }

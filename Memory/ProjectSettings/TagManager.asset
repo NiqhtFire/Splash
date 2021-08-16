@@ -10,6 +10,7 @@ TagManager:
   - Souls
   - button
   - Bullet
+  - FastBullet
   layers:
   - Default
   - TransparentFX
