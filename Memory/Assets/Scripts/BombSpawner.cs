@@ -9,21 +9,21 @@ public class BombSpawner : MonoBehaviour
     [SerializeField]
     GameObject bullet;
     public bool speedable = true;
-
-    public float fireRate = 10;
-    public float nextFire = 4;
+    public float random;
+    public float fireRate;
+    public float nextFire = 5;
     // Use this for initialization
     void Start()
     {
-        fireRate = Random.Range(5, 10);
+        fireRate = Random.Range(15f, 30f);
         nextFire = Time.time;
-
+        random = Random.Range(15, 30);
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
         CheckIfTimeToFire();
         randomlababa();
         StartCoroutine(baslangic());
@@ -33,8 +33,8 @@ public class BombSpawner : MonoBehaviour
     IEnumerator randomlababa()
     {
         yield return new WaitForSeconds(2);
-        fireRate = Random.Range(10, 18);
-
+        fireRate = Random.Range(15, 30);
+        
 
 
     }
@@ -46,7 +46,7 @@ public class BombSpawner : MonoBehaviour
    
     IEnumerator baslangic()
     {
-        yield return new WaitForSeconds(16);
+        yield return new WaitForSecondsRealtime(random);
         if (Time.time > nextFire)
         {
             Instantiate(bullet, transform.position, Quaternion.identity);

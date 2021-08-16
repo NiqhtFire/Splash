@@ -73,14 +73,16 @@ public class Trail : MonoBehaviour
         {
             Debug.Log("Bomb!");
             CreateBombEffect();
+            Time.timeScale = 0.2f;
             StartCoroutine(randomlababa());
 
         }
 
     }
+  
     IEnumerator randomlababa()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSecondsRealtime(0.7f);
         baban.PM.SetActive(true);
         baban.anan = true;
         Time.timeScale = 0f;

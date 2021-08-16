@@ -154,8 +154,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 7989919114758828773, guid: f5c2dd76f629e6a42a01629420771ce2, type: 3}
   speedable: 1
+  random: 0
   fireRate: 10
-  nextFire: 4
+  nextFire: 6.42
 --- !u!122 &23255859
 Halo:
   m_ObjectHideFlags: 0
@@ -20052,8 +20053,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 7989919114758828773, guid: f5c2dd76f629e6a42a01629420771ce2, type: 3}
   speedable: 1
+  random: 0
   fireRate: 10
-  nextFire: 4
+  nextFire: 3.52
 --- !u!122 &796385435
 Halo:
   m_ObjectHideFlags: 0
@@ -31281,8 +31283,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 7989919114758828773, guid: f5c2dd76f629e6a42a01629420771ce2, type: 3}
   speedable: 1
+  random: 0
   fireRate: 10
-  nextFire: 4
+  nextFire: 4.77
 --- !u!122 &1687820042
 Halo:
   m_ObjectHideFlags: 0
@@ -31353,7 +31356,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1687820040}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -25.690226, y: 0.17306294, z: 11.248514}
+  m_LocalPosition: {x: -31.83, y: 0.17306294, z: 11.248514}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2108189423}
@@ -41566,8 +41569,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 7989919114758828773, guid: f5c2dd76f629e6a42a01629420771ce2, type: 3}
   speedable: 1
+  random: 0
   fireRate: 10
-  nextFire: 4
+  nextFire: 1.64
 --- !u!122 &2094178203
 Halo:
   m_ObjectHideFlags: 0
@@ -41638,7 +41642,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2094178201}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.1497746, y: 0.17306294, z: 11.248514}
+  m_LocalPosition: {x: 3.98, y: 0.17306294, z: 11.248514}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2108189423}
