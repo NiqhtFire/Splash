@@ -11,7 +11,7 @@ public class Bullet : MonoBehaviour
     Rigidbody2D rb;
     private GameObject target;
     Vector2 moveDirection;
-    
+
     // Use this for initialization
     void Start()
     {
@@ -22,6 +22,7 @@ public class Bullet : MonoBehaviour
         Destroy(gameObject, mesafe);
 
     }
+
     private void Update()
     {
 
@@ -44,9 +45,14 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
      
         }
-        
+        if (col.gameObject.tag == "BombBullet")
+        {
+            Destroy(gameObject);
+
+        }
+
     }
-   
+
 
 
 }
