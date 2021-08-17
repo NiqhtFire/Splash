@@ -7,12 +7,13 @@ public class ScoreScript : MonoBehaviour
   
     public Text scoreText;
     public Text highscore;
+    
     public float score;
     public float pointsecond;
     public Character cha;
     public Text coin;
     private int coinz;
-   
+    public int intscore;
     void Start()
     {
         score = 0f;
@@ -25,7 +26,7 @@ public class ScoreScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        intscore = (int)score;
 
         coin.text = PlayerPrefs.GetFloat("coin").ToString();
         scoreText.text = "Score " + (int)score;
