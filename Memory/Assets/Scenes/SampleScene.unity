@@ -5169,6 +5169,7 @@ MonoBehaviour:
   slice: {fileID: 140737625}
   sliceblue: {fileID: 244564117}
   bombslice: {fileID: 1223595465}
+  ripple: {fileID: 519420033}
 --- !u!96 &242936768
 TrailRenderer:
   serializedVersion: 2
@@ -19802,6 +19803,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
+  - component: {fileID: 519420033}
   m_Layer: 8
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -19934,6 +19936,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 118ecadc141cfd349a8a42339dd4a914, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RippleMaterial: {fileID: 2100000, guid: 945d528f5c8b22040a0d15f1213caa8b, type: 2}
+  MaxAmount: 26.86
+  Friction: 0.664
 --- !u!1 &681508548
 GameObject:
   m_ObjectHideFlags: 0
@@ -31267,7 +31284,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db18e0018b9ca3042a798280779891ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  discordhighscore: 
+  discordscore: 
+  scoregameobject: {fileID: 0}
   score: {fileID: 223698775}
+  scene: 0
 --- !u!4 &1640962885
 Transform:
   m_ObjectHideFlags: 0

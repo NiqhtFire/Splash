@@ -11,6 +11,7 @@ public class Trail : MonoBehaviour
     public ParticleSystem slice;
     public ParticleSystem sliceblue;
     public ParticleSystem bombslice;
+    public RipplePostProcessor ripple;
     void Start()
     {
         Cursor.visible = false;
@@ -59,7 +60,9 @@ public class Trail : MonoBehaviour
         {
 
             CreateSlice();
-
+            ripple.CreateRipple();
+            Time.timeScale = 0.8f;
+            StartCoroutine(sloweffect());
 
         }
         if (col.gameObject.tag == ("FastBullet"))
@@ -67,19 +70,27 @@ public class Trail : MonoBehaviour
 
             CreateBlueSlice();
             Debug.Log("fast");
-
+            ripple.CreateRipple();
+            Time.timeScale = 0.8f;
+            StartCoroutine(sloweffect());
         }
         if (col.gameObject.tag == ("BombBullet"))
         {
             Debug.Log("Bomb!");
             CreateBombEffect();
+            ripple.CreateRipple();
             Time.timeScale = 0.2f;
             StartCoroutine(randomlababa());
 
         }
 
     }
-  
+    IEnumerator sloweffect()
+    {
+        yield return new WaitForSecondsRealtime(0.2f);
+        Time.timeScale = 1f;
+
+    }
     IEnumerator randomlababa()
     {
         yield return new WaitForSecondsRealtime(0.7f);
