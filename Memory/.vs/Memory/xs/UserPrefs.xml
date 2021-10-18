@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{38D907CB-79A7-C8C6-7F2F-0C11AD1A2892}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Discord2.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Discord2.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="ac3c9ad5-ccd3-4632-812f-1b75ce747b13" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -634,7 +634,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -61, y: 35.5}
+  m_AnchoredPosition: {x: -37.78, y: 35.5}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &591322630
@@ -1454,6 +1454,7 @@ MonoBehaviour:
   slice: {fileID: 0}
   sliceblue: {fileID: 0}
   bombslice: {fileID: 0}
+  ripple: {fileID: 0}
 --- !u!96 &1266858650
 TrailRenderer:
   serializedVersion: 2
@@ -2259,7 +2260,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db18e0018b9ca3042a798280779891ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  discordhighscore: 
+  discordscore: 
+  scoregameobject: {fileID: 0}
   score: {fileID: 0}
+  scene: 0
 --- !u!4 &1508495598
 Transform:
   m_ObjectHideFlags: 0

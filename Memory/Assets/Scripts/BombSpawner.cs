@@ -5,7 +5,7 @@ using UnityEngine;
 public class BombSpawner : MonoBehaviour
 {
 
-
+    
     [SerializeField]
     GameObject bullet;
     public bool speedable = true;

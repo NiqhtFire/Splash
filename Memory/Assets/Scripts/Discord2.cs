@@ -50,28 +50,24 @@ public class Discord2 : MonoBehaviour
         UpdatePresence();
         scene = SceneManager.GetActiveScene().buildIndex;
         
-        if( scene == 0)
-        {
+        switch (scene) {
+            case 0:
             discorddetails = "Daha Menüde";
+            break;
 
-
-        }
-        if (scene == 1)
-        {
+            case 1:
             discorddetails = "Düşmanları Kesiliyor";
             scoregameobject = GameObject.Find("score");
             score = (ScoreScript)scoregameobject.GetComponent(typeof(ScoreScript));
+            break;
 
-        }
-        if (scene == 2)
-        {
+            case 2:
             discorddetails = "Shopta Geziniyor";
+            break;
 
-
-        }
-        if (scene == 3)
-        {
+            case 3:
             discorddetails = "Shopta Geziniyor";
+            break;
 
 
         }

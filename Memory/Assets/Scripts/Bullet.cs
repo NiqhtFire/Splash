@@ -12,6 +12,7 @@ public class Bullet : MonoBehaviour
     private GameObject target;
     Vector2 moveDirection;
 
+
     // Use this for initialization
     void Start()
     {
@@ -37,6 +38,7 @@ public class Bullet : MonoBehaviour
         }
         if (col.gameObject.tag == ("trail"))
         {
+            
             Debug.Log("Hit!");
             Destroy(gameObject);
         }
